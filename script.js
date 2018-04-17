@@ -5,16 +5,16 @@ let imagens = [
     'img/comida2.jpg',
     'img/comida3.jpg',
     'img/comida4.jpg',
-    'img/comida5.png'
+    'img/comida5.jpg'
 ];
-let bannerAtivo = 1;
+let trocarImg = 1;
 
 
 function mudar(){
-    banner.src = imagens[bannerAtivo];
-    bannerAtivo++;
+    banner.src = imagens[trocarImg];
+    trocarImg++;
 
-    if(bannerAtivo == imagens.length){
-        bannerAtivo = 0;
+    if(trocarImg == imagens.length){
+        trocarImg = 0;
     }
 };
